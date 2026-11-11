@@ -1,0 +1,65 @@
+{
+  "project": "KRAMPUS",
+  "version": "0.1.0",
+  "doctrine": "One front door per capability; verify, never trust. A member that cannot be resolved is reported, never silently skipped in the exit code.",
+  "members": [
+    {
+      "name": "madi",
+      "kind": "module",
+      "module": "madi",
+      "attrs": ["__version__"],
+      "package": "madi>=0.1.0",
+      "repo": "myzticalbabe/madi",
+      "role": "The one browsing instrument: fetch, challenge taxonomy, readability, discovery, native scorer, native screen.",
+      "required": true
+    },
+    {
+      "name": "eve",
+      "kind": "module",
+      "module": "eve_unleashed",
+      "attrs": [],
+      "package": "eve-unleashed>=3.16.0",
+      "repo": "myzticalbabe/EveUnleashed",
+      "role": "Answers and runs: CLI, trainers, swarm, languages. The engine room.",
+      "required": true
+    },
+    {
+      "name": "mellifluousml",
+      "kind": "module",
+      "module": "eve_unleashed.mcml",
+      "attrs": ["Dense", "Sequential", "mse"],
+      "package": "eve-unleashed>=3.16.0",
+      "repo": "myzticalbabe/EveUnleashed",
+      "role": "Native learning blocks: seeded Dense lego, deterministic from seed alone, no numpy, no torch.",
+      "required": true
+    },
+    {
+      "name": "lillith",
+      "kind": "module",
+      "module": "eve_unleashed.trainer",
+      "attrs": ["EVOLUTION_LILLITH_ENABLED", "EVOLUTION_LILLITH_WARMUP_GENS", "EVOLUTION_LILLITH_STALL_EPS"],
+      "package": "eve-unleashed>=3.16.0",
+      "repo": "myzticalbabe/EveUnleashed",
+      "role": "The tuner: watches best-fitness trajectory, widens stalls, keeps evolution honest.",
+      "required": true
+    },
+    {
+      "name": "gamora",
+      "kind": "script",
+      "root_env": "AZAZAEL_ROOT",
+      "path": "Project_GAMORA/gamora.py",
+      "repo": "myzticalbabe/azazael",
+      "role": "Gamora DOMellifluousML cliT: one front door routing lilith, eve, jaeger, cradle, lucy, swarm, inject, berzerker.",
+      "required": false
+    },
+    {
+      "name": "berzerker",
+      "kind": "script",
+      "root_env": "AZAZAEL_ROOT",
+      "path": "Project_GAMORA/berzerker.py",
+      "repo": "myzticalbabe/azazael",
+      "role": "Berzerker A.I.O.: audit census, 3-strata mind crossing, offline STEM coach. Reached as `gamora berzerker ...`.",
+      "required": false
+    }
+  ]
+}
