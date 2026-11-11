@@ -1,6 +1,6 @@
 [project]
 name = "krampus"
-version = "0.2.0"
+version = "0.2.1"
 description = "PROJECT KRAMPUS: MellifluousML, Madi, Gamora (+Berzerker AIO), Eve, Lillith — one verified composition"
 readme = "README.md"
 authors = [{name = "Azazael"}]
@@ -26,6 +26,14 @@ test = [
 
 [project.scripts]
 krampus = "krampus:main"
+
+[tool.setuptools.packages.find]
+include = ["krampus*"]
+
+# cradle's lesson, learned again here: `krampus doctor` reads this file by path, so a
+# wheel without it installs a command that crashes. Measured on 0.2.0.
+[tool.setuptools.package-data]
+krampus = ["KRAMPUS.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

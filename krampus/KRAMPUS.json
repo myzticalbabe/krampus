@@ -1,6 +1,6 @@
 {
   "project": "KRAMPUS",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "doctrine": "One front door per capability; verify, never trust. A member that cannot be resolved is reported, never silently skipped in the exit code.",
   "members": [
     {

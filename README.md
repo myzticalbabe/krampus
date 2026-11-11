@@ -16,7 +16,7 @@ Verify, never trust:
 ```bash
 # installable today, no index needed: Madi first, then the composition
 pip install https://github.com/myzticalbabe/madi/releases/download/v0.1.0/madi-0.1.0-py3-none-any.whl
-pip install https://github.com/myzticalbabe/krampus/releases/download/v0.2.0/krampus-0.2.0-py3-none-any.whl
+pip install https://github.com/myzticalbabe/krampus/releases/download/v0.2.1/krampus-0.2.1-py3-none-any.whl
 
 krampus doctor          # READY / MISSING / SKIP per member
 krampus doctor --json   # machine-readable
