@@ -1,6 +1,6 @@
 {
   "project": "KRAMPUS",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "doctrine": "One front door per capability; verify, never trust. A member that cannot be resolved is reported, never silently skipped in the exit code.",
   "members": [
     {
@@ -59,6 +59,24 @@
       "path": "Project_GAMORA/berzerker.py",
       "repo": "myzticalbabe/azazael",
       "role": "Berzerker A.I.O.: audit census, 3-strata mind crossing, offline STEM coach. Reached as `gamora berzerker ...`.",
+      "required": false
+    },
+    {
+      "name": "cradle",
+      "kind": "script",
+      "root_env": "AZAZAEL_ROOT",
+      "path": "Project_CRADLE/cradle.py",
+      "repo": "myzticalbabe/azazael",
+      "role": "Verify-and-land chain: FLAMING SWORD sweep, defender framing, REAPER refusal, GRIMOIRE lesson memory. The platform's judgment. Standalone packaging blocked: needs Project_FLAMING_SWORD/tools beside the repo.",
+      "required": false
+    },
+    {
+      "name": "jaeger",
+      "kind": "script",
+      "root_env": "AZAZAEL_ROOT",
+      "path": "src/AOA/core/delegation_tracer.py",
+      "repo": "myzticalbabe/azazael",
+      "role": "Durable spans: one written record per routed delegation (capability, verdict, judge, duration, violations), companion cd3_exporter.py. Standalone successor ships as krampus-jaeger (myzticalbabe/jaeger).",
       "required": false
     }
   ]

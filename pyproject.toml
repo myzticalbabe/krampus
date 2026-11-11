@@ -1,6 +1,6 @@
 [project]
 name = "krampus"
-version = "0.1.0"
+version = "0.2.0"
 description = "PROJECT KRAMPUS: MellifluousML, Madi, Gamora (+Berzerker AIO), Eve, Lillith — one verified composition"
 readme = "README.md"
 authors = [{name = "Azazael"}]

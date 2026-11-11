@@ -16,7 +16,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 import krampus  # noqa: E402
 
-NAMES = ["madi", "eve", "mellifluousml", "lillith", "gamora", "berzerker"]
+NAMES = ["madi", "eve", "mellifluousml", "lillith", "gamora",
+         "berzerker", "cradle", "jaeger"]
 
 
 def _manifest():
@@ -80,6 +81,11 @@ def stubbed(monkeypatch, tmp_path):
     (root / "Project_GAMORA").mkdir(parents=True)
     (root / "Project_GAMORA" / "gamora.py").write_text("# gamora\n")
     (root / "Project_GAMORA" / "berzerker.py").write_text("# berzerker\n")
+    (root / "Project_CRADLE").mkdir(parents=True)
+    (root / "Project_CRADLE" / "cradle.py").write_text("# cradle\n")
+    (root / "src" / "AOA" / "core").mkdir(parents=True)
+    (root / "src" / "AOA" / "core" / "delegation_tracer.py").write_text(
+        "# jaeger\n")
     monkeypatch.setenv("AZAZAEL_ROOT", str(root))
 
 
@@ -97,6 +103,8 @@ def test_doctor_skips_rooted_without_checkout(stubbed, monkeypatch):
     states = {r["name"]: r["state"] for r in results}
     assert states["gamora"] == "SKIP"
     assert states["berzerker"] == "SKIP"
+    assert states["cradle"] == "SKIP"
+    assert states["jaeger"] == "SKIP"
     assert states["madi"] == "READY"
 
 
