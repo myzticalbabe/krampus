@@ -4,8 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'krampus.py'
-      - 'KRAMPUS.json'
+      - 'krampus/**'
       - 'tests/**'
       - 'pyproject.toml'
       - '.github/workflows/test.yml'
