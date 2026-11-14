@@ -1,31 +1,70 @@
-# PROJECT KRAMPUS
+# krampus
 
-One verified composition: **MellifluousML, Madi, Gamora (+ Berzerker A.I.O.), Eve, Lillith.**
+PROJECT KRAMPUS — MellifluousML, Madi, Gamora (+Berzerker AIO), Eve, Lilith — one verified composition.
 
-| member | lives in | role |
-|---|---|---|
-| Madi | `madi` (PyPI) | browsing instrument: fetch, walls, readability, discovery, scorer, screen |
-| Eve | `eve-unleashed` (PyPI) | answers and runs: CLI, trainers, swarm, languages |
-| MellifluousML | `eve_unleashed.mcml` | native learning blocks, deterministic from seed alone |
-| Lillith | `eve_unleashed.trainer` | the tuner: stall-widening, warmup, honesty keeper |
-| Gamora | azazael `Project_GAMORA/gamora.py` | DOMellifluousML cliT: one front door routing all six |
-| Berzerker | azazael `Project_GAMORA/berzerker.py` | A.I.O.: audit census, mind crossing, STEM coach (`gamora berzerker ...`) |
+[![CI](https://github.com/myzticalbabe/krampus/actions/workflows/ci.yml/badge.svg)](https://github.com/myzticalbabe/krampus/actions/workflows/ci.yml)
+[![Pages Deploy](https://github.com/myzticalbabe/krampus/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/myzticalbabe/krampus/actions/workflows/pages-deploy.yml)
+[![License: SOUL FORGE](https://img.shields.io/badge/License-SOUL_FORGE-violet.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/myzticalbabe/krampus)](https://github.com/myzticalbabe/krampus/releases)
+[![GitHub stars](https://img.shields.io/github/stars/myzticalbabe/krampus?style=social)](https://github.com/myzticalbabe/krampus/stargazers)
 
-Verify, never trust:
+---
+
+## Overview
+
+Free-threaded AI agent orchestra composition.
+
+## Installation
 
 ```bash
-# installable today, no index needed: Madi first, then the composition
-pip install https://github.com/myzticalbabe/madi/releases/download/v0.1.0/madi-0.1.0-py3-none-any.whl
-pip install https://github.com/myzticalbabe/krampus/releases/download/v0.2.1/krampus-0.2.1-py3-none-any.whl
-
-krampus doctor          # READY / MISSING / SKIP per member
-krampus doctor --json   # machine-readable
+pip install -e .
 ```
 
-`pip install krampus` works once the PyPI trusted publisher exists; the publish
-workflow is gated on the repository variable `PYPI_TRUSTED_PUBLISHER` so a tag that
-cannot publish leaves a green repository rather than a red X.
+## Usage
 
-`MISSING` on a required member exits 1. Rooted members (Gamora,
-Berzerker) report `SKIP` when `AZAZAEL_ROOT` points at no checkout —
-skips are information, not failure.
+python -m krampus --help
+
+## Architecture
+
+See [Domain Atlas](https://myzticalbabe.github.io) for interactive visualization.
+
+## License
+
+This project is licensed under the **SOUL FORGE License v1.0** — see [LICENSE](LICENSE) for details.
+
+> *"Code is crystallized intention. Tend the fire."*
+
+## Related Repositories
+
+| Repo | Description |
+|------|-------------|
+| [azazael](https://github.com/myzticalbabe/azazael) | Monorepo: worm registry, cluster system, agent harness |
+| [EveUnleashed](https://github.com/myzticalbabe/EveUnleashed) | Gamora, Lucy, Jaeger, Berzerker AIO native on 3.16t |
+| [eliza](https://github.com/myzticalbabe/eliza) | Companion runtime: shards, adopted trees |
+| [codex-video-engine](https://github.com/myzticalbabe/codex-video-engine) | CODEX Studio desktop app + video engine |
+| [ecosystem-orchestrator](https://github.com/myzticalbabe/ecosystem-orchestrator) | ML platform install/orchestration |
+| [scribe](https://github.com/myzticalbabe/scribe) | Documentation generation |
+| [persephone-sync](https://github.com/myzticalbabe/persephone-sync) | Cross-platform env sync |
+| [hydra-mlcluster](https://github.com/myzticalbabe/hydra-mlcluster) | Adaptive ML cluster processing |
+| [flaming-sword](https://github.com/myzticalbabe/flaming-sword) | Defensive instrument: sentinel, compliance, formal verification |
+| [shardex](https://github.com/myzticalbabe/shardex) | Shard execution engine |
+| [krampus](https://github.com/myzticalbabe/krampus) | Composition: MellifluousML, Madi, Gamora, Eve, Lilith |
+| [azazael-core](https://github.com/myzticalbabe/azazael-core) | Installable, interpreter-agnostic repackaging |
+| [grantforge](https://github.com/myzticalbabe/grantforge) | AI-native grant tooling |
+| [madi](https://github.com/myzticalbabe/madi) | Browsing instrument: fetch, challenge taxonomy, scorer |
+| [jaeger](https://github.com/myzticalbabe/jaeger) | Durable spans, JSONL ledger, stdlib only |
+| [cradle](https://github.com/myzticalbabe/cradle) | Composition over FLAMING SWORD, REAPER, GRIMOIRE |
+| [esquire-admissibility](https://github.com/myzticalbabe/esquire-admissibility) | AI-evidence admissibility gates |
+| [nurse-ratchet](https://github.com/myzticalbabe/nurse-ratchet) | Behavioural package: person state modelled |
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Links
+
+- **Monorepo**: https://github.com/myzticalbabe/azazael
+- **Landing Hub**: https://myzticalbabe.github.io
+- **Domain Atlas**: https://myzticalbabe.github.io/index.html
+- **Issues**: https://github.com/myzticalbabe/krampus/issues
+- **Discussions**: https://github.com/myzticalbabe/krampus/discussions
