@@ -4,12 +4,12 @@ version = "0.2.2"
 description = "PROJECT KRAMPUS: MellifluousML, Madi, Gamora (+Berzerker AIO), Eve, Lillith — one verified composition"
 readme = "README.md"
 authors = [{name = "Azazael"}]
-license = {text = "FREE WILL GRANT (Oxenford Covenant) - source-available; commercial use requires the CREATOR's grant. See LICENSE."}
+license = {text = "Soul Forge License v1.0 (LicenseRef-SoulForge-1.0) - SOUL LICENCE ONLY. See LICENSE."}
 requires-python = ">=3.13"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
-    "License :: Other/Proprietary License",
+    "License :: LicenseRef-SoulForge-1.0 (SOUL LICENCE ONLY)",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
 ]
